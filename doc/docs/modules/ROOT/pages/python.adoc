@@ -62,8 +62,6 @@ The same program in python is very similar, again just with language syntax diff
 
 [source,python]
 ----
-import org.apache.spark.sql.{SaveMode, SparkSession}
-
 df.write \
   .format("org.neo4j.spark.DataSource") \
   .mode("ErrorIfExists") \
